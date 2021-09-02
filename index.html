@@ -5,12 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
+    <title>Library</title>
+    <!--------------
+        bootstrap 
+    ---------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
-<body>
-    <h1>Hello!!</h1>
-    <h2>sceond test</h2>
+<body style="background-color: rgb(100, 149, 237);" class="container">
+    <section>
+        <!---------------- 
+            search input 
+        ----------------->
+        <div class="text-center text-info mt-5">
+            <h2 class="text-dark">
+                Let's go to the library and collect </h2>
+            <h1 class="text-danger">Your Favourite Book</h1>
+        </div>
+        <div class="input-group mb-3 mx-auto w-50">
+            <input id="search-field" type="text" class="form-control" placeholder="Search here for acquiring knowledge"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchField()" class="btn  bg-danger text-black mx-2" type="button"
+                id="input-button">Search</button>
+        </div>
+        <!------------------ 
+            error handling 
+        ------------------->
+        <div class="text-center" id="error"></div>
+        <!------------------- 
+            found total data 
+        --------------------->
+        <div>
+            <h3 class="text-center mb-3"><span id="found-data"></span> </h3>
+        </div>
+        <!----------------
+             books holder 
+        ------------------>
+        <div id="image-box" class="row row-cols-1 row-cols-md-3 g-4 align-item-center">
+        </div>
+    </section>
+    <!------------------- 
+        bootstrap js link
+    -------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!----------------- 
+        javascript link 
+    -------------------->
+    <script src="JS/index.js"></script>
 </body>
-
-</html>
